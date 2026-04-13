@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+    <title>Your Name - Produção e Trilha Sonora</title>
+    <style>
+        :root {
+            --espaco: #0D1B2A;
+            --noite: #1B263B;
+            --estrela: #E0E1DD;
+            --cometa-rosa: #F72585;
+            --cometa-azul: #4CC9F0;
+        }
+
+        body {
+            background-color: var(--espaco);
+            color: var(--estrela);
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            background-image: 
+                radial-gradient(1px 1px at 10px 20px, #fff, rgba(0,0,0,0)),
+                radial-gradient(1.2px 1.2px at 150px 250px, #ddd, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 280px 40px, #fff, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 200px 200px;
+        }
+
+        header {
+            background: linear-gradient(to bottom, var(--espaco), var(--noite));
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--cometa-rosa);
+        }
+
+        h1 { font-family: 'Georgia', serif; color: var(--cometa-azul); }
+
+        nav {
+            background-color: rgba(27, 38, 59, 0.95);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid var(--cometa-azul);
+
+        }
+
+        nav a { color: var(--estrela); text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { color: var(--cometa-rosa); }
+
+        main {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: var(--noite);
+            border-radius: 20px;
+            border: 1px solid var(--cometa-azul);
+        }
+
+        .producao-container {
+            margin: 20px 0;
+            border: 1px solid var(--cometa-rosa);
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(13, 27, 42, 0.4);
+        }
+
+        .img-producao {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px var(--cometa-azul);
+            border: 1px solid var(--cometa-azul);
+            transition: transform 0.3s;
+        }
+
+        .img-producao:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px var(--cometa-rosa);
+        }
+
+       .galeria-audio {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(13, 27, 42, 0.5);
+            border-radius: 10px;
+        }
+
+        .galeria-audio img {
+            width: 28%;
+            border: 2px solid var(--cometa-azul);
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .galeria-audio img:hover {
+            transform: scale(1.05);
+            border-color: var(--cometa-rosa);
+        }
+
+       h2 {
+            font-family: 'Trebuchet MS', sans-serif;
+            color: var(--cometa-rosa);
+            border-left: 5px solid var(--cometa-azul);
+            padding-left: 15px;
+        }
+
+        p { text-align: justify; }
+
+        .links-area {
+            margin-top: 30px;
+            padding: 20px;
+            border-top: 1px dashed var(--cometa-azul);
+            text-align: center;
+        }
+
+        .links-area a {
+            color: var(--cometa-azul);
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            margin: 0 10px;
+        }
+
+        .links-area a:hover {
+            color: var(--cometa-rosa);
+        }
+
+        footer { text-align: center; padding: 40px; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bastidores e Melodias</h1>
+        <p style="text-align: center;">"A experiência visual e sonora definitiva."</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="enredo.html">O Enredo</a>
+        <a href="itomori.html">Itomori</a>
+        <a href="producao.html">Produção</a>
+    </nav>
+
+    <main>
+        <section class="producao-container">
+            <h2>A Visão de Makoto Shinkai</h2>
+            <p>Makoto Shinkai é conhecido como o "mestre das paisagens". Em <em>Your Name</em>, ele elevou o nível do fotorrealismo na animação, utilizando cenários reais de Tóquio e Gifu para criar uma experiência imersiva. Sua direção foca nos pequenos detalhes: a luz refletindo em uma porta de trem, o movimento das nuvens e o brilho das estrelas, tudo para evocar sentimentos de saudade e esperança.</p>
+            
+            <img src="../assets/images/producao-diretor.webp" alt="Makoto Shinkai" class="img-producao">
+        </section>
+
+        <h3>A Trilha Sonora da RADWIMPS</h3>
+        <p>A música não é apenas um fundo em <em>Your Name</em>; ela é uma narradora. A banda de rock japonesa <strong>RADWIMPS</strong> trabalhou por quase dois anos em colaboração direta com Shinkai. Canções como "Zenzenzense" e "Nandemonaiya" tornaram-se hinos mundiais, capturando perfeitamente a urgência e a emoção da jornada de Taki e Mitsuha.</p>
+
+        <div class="galeria-audio">
+            <img src="../assets/images/producao-banda.webp" alt="Banda RADWIMPS">
+            <img src="../assets/images/producao-sketch.jpg" alt="Esboços da Animação">
+        </div>
+
+        <p>A produção também contou com um elenco de voz impecável e uma equipe de animação que misturou técnicas tradicionais com efeitos digitais modernos para criar o rastro colorido do cometa. O resultado foi um fenômeno global que quebrou recordes de bilheteria e se tornou um dos animes mais queridos de todos os tempos.</p>
+
+        <section class="links-area">
+            <h3>Mais sobre a produção:</h3>
+            <a href="https://www.youtube.com/user/radwimpsstaff" target="_blank">Canal Oficial RADWIMPS</a> |
+            <a href="https://pt.wikipedia.org/wiki/Kimi_no_Na_wa" target="_blank">Informações Gerais Sobre o Filme</a>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align:center">🎬 Copyright &copy; 2026 Luiz Fernando Rodrigues 🎬</p>
+    </footer>
+
+</body>
+</html>

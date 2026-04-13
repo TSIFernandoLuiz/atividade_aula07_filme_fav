@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+    <title>Your Name - A Vila de Itomori e o Cometa</title>
+    <style>
+        :root {
+            --espaco: #0D1B2A;
+            --noite: #1B263B;
+            --estrela: #E0E1DD;
+            --cometa-rosa: #F72585;
+            --cometa-azul: #4CC9F0;
+        }
+
+        body {
+            background-color: var(--espaco);
+            color: var(--estrela);
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            background-image: 
+                radial-gradient(1.2px 1.2px at 30px 40px, #fff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 100px 100px, #ddd, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 200px 150px, #fff, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 300px 300px;
+        }
+
+        header {
+            background: linear-gradient(to bottom, var(--espaco), var(--noite));
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--cometa-rosa);
+        }
+
+        h1 { font-family: 'Georgia', serif; color: var(--cometa-azul); }
+
+        nav {
+            background-color: rgba(27, 38, 59, 0.95);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid var(--cometa-azul);
+        }
+
+        nav a { color: var(--estrela); text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { color: var(--cometa-azul); }
+
+        main {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: var(--noite);
+            border-radius: 15px;
+            border: 1px solid var(--cometa-azul);
+        }
+
+        .secao-imagem {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .img-destaque {
+            display: block;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            border: 1px solid var(--cometa-azul);
+            box-shadow: 0 0 15px var(--cometa-azul);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .img-destaque:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px var(--cometa-rosa);
+        }
+
+        .galeria-pequena {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(13, 27, 42, 0.5);
+            border-radius: 10px;
+        }
+
+        .galeria-pequena img {
+            width: 28%;
+            border: 2px solid var(--cometa-azul);
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .galeria-pequena img:hover {
+            transform: scale(1.05);
+            border-color: var(--cometa-rosa);
+        }
+
+        h2 {
+            font-family: 'Trebuchet MS', sans-serif;
+            color: var(--cometa-rosa);
+            border-left: 5px solid var(--cometa-azul);
+            padding-left: 15px;
+        }
+
+        p { text-align: justify; }
+
+        .links-area {
+            margin-top: 30px;
+            padding: 20px;
+            border-top: 1px dashed var(--cometa-azul);
+            text-align: center;
+        }
+
+        .links-area a {
+            color: var(--cometa-azul);
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            margin: 0 10px;
+        }
+
+        .links-area a:hover {
+            color: var(--cometa-rosa);
+        }
+
+        footer { text-align: center; padding: 40px; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Itomori: A Cidade sob as Estrelas</h1>
+        <p style="text-align:center">"Dê-me um pouco mais de tempo, só um pouco mais."</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="enredo.html">O Enredo</a>
+        <a href="itomori.html">Itomori</a>
+        <a href="producao.html">Produção</a>
+    </nav>
+
+    <main>
+        <h2>Cenários de Tirar o Fôlego</h2>
+        <p>A vila de Itomori, embora fictícia, foi inspirada em locais reais como a cidade de Hida, no Japão. Cercada por montanhas e centrada em torno de um lago circular formado por um impacto antigo de meteoro, a vila representa a conexão profunda de Mitsuha com suas raízes e as tradições de sua família no Santuário Miyamizu.</p>
+
+        <div class="secao-imagem">
+            <img src="../assets/images/itomori-lago.jpg" alt="Vista do Lago Itomori" class="img-destaque">
+            <p style="text-align: right;"><small>O Lago de Itomori.</small></p>
+        </div>
+
+        <p>Tudo muda com a chegada do <strong>Cometa Tiamat</strong>. O que deveria ser um espetáculo astronômico único em mil anos transforma-se em um evento catastrófico quando o núcleo do cometa se fragmenta sobre a vila. A beleza das cores azul e rosa que riscam o céu noturno mascara o destino trágico que Taki tentará reescrever através de suas visões.</p>
+
+        <div class="galeria-pequena">
+            <img src="../assets/images/itomori-santuario.webp" alt="Santuário Miyamizu">
+            <img src="../assets/images/itomori-cometa.jpg" alt="Cometa Tiamat no céu">
+        </div>
+
+        <p>A reconstrução visual de Itomori é um dos pontos altos da direção de arte. O uso de luzes e sombras para mostrar a vila em diferentes horários do dia — especialmente durante o crepúsculo — reforça a sensação de nostalgia e o desejo imenso dos protagonistas de se encontrarem antes que tudo desapareça.</p>
+
+        <section class="links-area">
+            <h3>Explore mais:</h3>
+            <a href="https://mx.pinterest.com/pin/751819731537600988/" target="_blank">Desenho 3D da Vila de Itomori</a> |
+            <a href="https://www.youtube.com/watch?v=s0wTdCQoc2k" target="_blank">Trailer Oficial (YouTube)</a>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align: center;">🗿 Copyright &copy; 2026 Luiz Fernando Rodrigues 🗿</p>
+    </footer>
+
+</body>
+</html>

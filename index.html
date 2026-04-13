@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+    <title>Your Name - Uma Conexão Estelar</title>
+    <style>
+        body {
+            background-color: var(--espaco);
+            background-image: 
+                radial-gradient(1px 1px at 20px 30px, #eee, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 50px 160px, #ddd, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 90px 40px, #fff, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 130px 80px, #fff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 160px 120px, #ddd, rgba(0,0,0,0));
+            
+            background-repeat: repeat;
+            background-size: 200px 200px;
+        }
+        main {
+            border: 1px solid rgba(76, 201, 240, 0.2);
+            backdrop-filter: blur(2px);
+        }
+
+        :root {
+            --espaco: #0D1B2A;
+            --noite: #1B263B;
+            --estrela: #E0E1DD;
+            --cometa-rosa: #F72585;
+            --cometa-azul: #4CC9F0;
+        }
+
+        body {
+            background-color: var(--espaco);
+            color: var(--estrela);
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(to bottom, var(--espaco), var(--noite));
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--cometa-rosa);
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 2.9rem;
+            margin: 0;
+            color: var(--cometa-azul);
+            text-shadow: 2px 2px 10px rgba(76, 201, 240, 0.5);
+        }
+
+        nav {
+            background-color: rgba(27, 38, 59, 0.95);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            border-bottom: 3px solid var(--cometa-azul);
+            z-index: 1000;
+        }
+
+        nav a {
+            color: var(--estrela);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover { color: var(--cometa-rosa); }
+
+        main {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: var(--noite);
+            border-radius: 15px;
+            border: 1px solid var(--cometa-azul);
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            font-family: 'Trebuchet MS', sans-serif;
+            color: var(--cometa-rosa);
+            border-left: 5px solid var(--cometa-azul);
+            padding-left: 15px;
+        }
+
+        p { text-align: justify; }
+
+        .galeria {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(13, 27, 42, 0.5);
+            border-radius: 10px;
+        }
+
+        .galeria img {
+            width: 28%;
+            border: 2px solid var(--cometa-azul);
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.05);
+            border-color: var(--cometa-rosa);
+        }
+
+        .links-externos {
+            margin-top: 30px;
+            padding: 20px;
+            border-top: 1px dashed var(--cometa-azul);
+            text-align: center;
+        }
+
+        .links-externos a {
+            color: var(--cometa-azul);
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            margin: 0 10px;
+        }
+
+        .links-externos a:hover {
+            color: var(--cometa-rosa);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+            color: var(--oliva);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+        <p style="text-align: center;"><em>"Eu estou sempre procurando por algo, por alguém."</em></p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="pages/enredo.html">O Enredo</a>
+        <a href="pages/itomori.html">Itomori</a>
+        <a href="pages/producao.html">Produção</a>
+    </nav>
+
+    <main>
+        <h2>Sobre a Obra</h2>
+        <p>Lançado originalmente em 2016 (e com um legado que atravessa décadas), <strong>Your Name</strong> (Kimi no Na wa) é um filme de animação japonês escrito e dirigido por Makoto Shinkai. A história gira em torno de Mitsuha Miyamizu, uma jovem que vive no campo, e Taki Tachibana, um rapaz que vive na agitada Tóquio. Sem explicação, eles começam a trocar de corpos aleatoriamente.</p>
+
+        <div class="galeria">
+            <img src="assets/images/capa1.jpg" alt="Taki e Mitsuha sob o cometa">
+            <img src="assets/images/capa2.jpg" alt="Mitsuha em Itomori">
+            <img src="assets/images/capa3.jpg" alt="Taki em Tóquio">
+        </div>
+
+        <p>A narrativa transcende o gênero de romance adolescente, mergulhando em temas profundos como o destino, a memória e a conexão espiritual através do <em>Musubi</em> — o fluxo do tempo e dos fios que se unem e se desencontram. Visualmente deslumbrante, o filme utiliza a passagem de um cometa para simbolizar tanto a beleza quanto a fragilidade da existência humana.</p>
+
+        <section class="links-externos">
+            <h3>Saiba mais:</h3>
+            <a href="https://www.imdb.com/title/tt5311514/" target="_blank">Ficha no IMDB</a> | 
+            <a href="https://www.crunchyroll.com/pt-br" target="_blank">Assistir na Crunchyroll</a>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align: center;">🌌 Copyright © 2026 Luiz Fernando Rodrigues 🌌</p>
+    </footer>
+
+</body>
+</html>

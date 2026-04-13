@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+    <title>Your Name - O Enredo e o Musubi</title>
+    <style>
+        :root {
+            --espaco: #0D1B2A;
+            --noite: #1B263B;
+            --estrela: #E0E1DD;
+            --cometa-rosa: #F72585;
+            --cometa-azul: #4CC9F0;
+        }
+
+        body {
+            background-color: var(--espaco);
+            color: var(--estrela);
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            background-image: 
+                radial-gradient(1px 1px at 25px 35px, #fff, rgba(0,0,0,0)),
+                radial-gradient(1.2px 1.2px at 50px 80px, #eee, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 90px 150px, #fff, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 150px 60px, #fff, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 250px 250px;
+        }
+
+        header {
+            background: linear-gradient(to bottom, var(--espaco), var(--noite));
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--cometa-rosa);
+        }
+
+        h1 { font-family: 'Georgia', serif; color: var(--cometa-azul); }
+
+        nav {
+            background-color: rgba(27, 38, 59, 0.95);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            border-bottom: 3px solid var(--cometa-azul);
+            z-index: 1000;
+        }
+
+        nav a {
+            color: var(--estrela);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover { color: var(--cometa-rosa); }
+
+        main {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: var(--noite);
+            border-radius: 20px;
+            border: 1px solid var(--cometa-azul);
+            backdrop-filter: blur(5px);
+        }
+
+        h2 {
+            font-family: 'Trebuchet MS', sans-serif;
+            color: var(--cometa-rosa);
+            border-left: 5px solid var(--cometa-azul);
+            padding-left: 15px;
+        }
+
+        .galeria-enredo {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(13, 27, 42, 0.5);
+            border-radius: 10px;
+        }
+
+        .galeria-enredo img {
+            width: 28%;
+            border: 2px solid var(--cometa-azul);
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .galeria-enredo img:hover {
+            transform: scale(1.05);
+            border-color: var(--cometa-rosa);
+        }
+
+        .links-area {
+            margin-top: 30px;
+            padding: 20px;
+            border-top: 1px dashed var(--cometa-azul);
+            text-align: center;
+        }
+
+        .links-area a {
+            color: var(--cometa-azul);
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            margin: 0 10px;
+        }
+
+        .links-area a:hover {
+            color: var(--cometa-rosa);
+        }
+        footer { text-align: center; padding: 20px; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>A Linha do Tempo e o Destino</h1>
+        <p style="text-align: center;">"Onde quer que você esteja no mundo, eu irei te procurar."</p>
+
+    </header>
+
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="enredo.html">O Enredo</a>
+        <a href="itomori.html">Itomori</a>
+        <a href="producao.html">Produção</a>
+    </nav>
+
+    <main>
+        <h2>Fios Entrelaçados: O Enredo</h2>
+        <p>A história de <em>Your Name</em> começa com um fenômeno inexplicável: Mitsuha, uma colegial de uma vila rural, e Taki, um estudante de Tóquio, começam a trocar de corpos durante o sono. O que inicialmente parece ser uma comédia de erros, logo se transforma em uma busca desesperada por conexão conforme eles deixam notas um para o outro em seus celulares para organizar suas vidas trocadas.</p>
+
+        <div class="galeria-enredo">
+            <img src="../assets/images/enredo-troca.webp" alt="Taki e Mitsuha percebendo a troca">
+            <img src="../assets/images/enredo-musubi.jpg" alt="A fita vermelha do destino">
+            <img src="../assets/images/enredo-crepusculo.jpg" alt="O encontro no Kataware-doki">
+        </div>
+
+        <p>O conceito central é o <strong>Musubi</strong>, explicado pela avó de Mitsuha. Musubi representa o fluxo do tempo e as conexões entre as pessoas. Como os fios que Mitsuha trança, as vidas de Taki e ela se retorcem, se entrelaçam, às vezes se desenredam, mas voltam a se conectar. O enredo dá uma guinada dramática quando Taki descobre que a troca de corpos não envolvia apenas espaço, mas também diferentes pontos no tempo.</p>
+
+        <p>O clímax ocorre no "Kataware-doki" (o crepúsculo), o único momento em que as barreiras temporais se dissolvem e os dois podem finalmente se ver. É uma corrida contra o tempo para salvar os habitantes de Itomori de um desastre iminente, provando que o amor e a memória podem ser mais fortes que o próprio destino.</p>
+
+        <section class="links-area">
+            <h3>Links Externos Consultados:</h3>
+            <a href="https://www.animenewsnetwork.com/encyclopedia/anime.php?id=18171" target="_blank">Anime News Network - Your Name</a> | 
+            <a href="https://myanimelist.net/anime/32281/Kimi_no_Na_wa" target="_blank">MyAnimeList - Sinopse e Notas</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>✨ Copyright &copy; 2026 Luiz Fernando Rodrigues ✨</p>
+    </footer>
+
+</body>
+</html>
